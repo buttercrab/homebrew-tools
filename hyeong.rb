@@ -1,5 +1,5 @@
 class Hyeong < Formula
-  desc "Hyeo-ung Programming Language Compiler in Rust (beta release)"
+  desc "Hyeo-ung Programming Language Compiler in Rust"
   homepage "https://github.com/buttercrab/hyeo-ung-lang"
   version "0.1.0"
 
