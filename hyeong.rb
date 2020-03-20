@@ -1,18 +1,14 @@
 class Hyeong < Formula
   desc "Hyeo-ung Programming Language Compiler in Rust"
   homepage "https://github.com/buttercrab/hyeo-ung-lang"
-  version "0.1.0"
+  url "https://github.com/buttercrab/hyeo-ung-lang/archive/v0.1.0.tar.gz"
+  sha256 "e349c3b671049b45f22bb0839fa30a79f1479f9a45e098202688ac5dabe3fcba"
 
-  if OS.mac?
-    url "https://github.com/buttercrab/hyeo-ung-lang/releases/download/v#{version}/hyeong-#{version}-darwin-x86-64.tar.gz"
-    sha256 "24990f87afe0813a0d67ba6525bc822b73f470c58692b5eedcdb5203dec2aa63"
-  elsif OS.linux?
-    url "https://github.com/buttercrab/hyeo-ung-lang/releases/download/v#{version}/hyeong-#{version}-linux-x86-64.tar.gz"
-    sha256 "82ede138f347af3034a4c2b3efd84393ec60acd33af77f209cd59e4afb74fe98"
-  end
+  depends_on "rust"
 
   def install
-    bin.install "hyeong"
+    system "cargo", "install", "--root", prefix, "--path", "."
+    bin.install "target/release/hyeong"
   end
 
   test do
