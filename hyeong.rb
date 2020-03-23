@@ -8,7 +8,7 @@ class Hyeong < Formula
 
   def install
     system "cargo", "install", "--root", prefix, "--path", "."
-    bin.install "bin/hyeong"
+    bin.install "target/release/hyeong"
   end
 
   test do
