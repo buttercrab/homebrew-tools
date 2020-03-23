@@ -23,6 +23,6 @@ class Hyeong < Formula
     system "rustup", "install", "stable"
     system "rustup", "default", "stable"
     system "#{bin}/hyeong", "build", "--build-path", "#{testpath}/temp", "#{testpath}/hello_world.hyeong"
-    assert_match "Hello, world!\n", shell_output("./#{testpath}/hello_world")
+    assert_match "Hello, world!\n", shell_output("#{testpath}/hello_world")
   end
 end
