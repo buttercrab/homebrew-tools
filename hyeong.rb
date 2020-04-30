@@ -2,7 +2,7 @@ class Hyeong < Formula
   desc "Hyeo-ung Programming Language Compiler in Rust"
   homepage "https://github.com/buttercrab/hyeo-ung-lang"
   url "https://github.com/buttercrab/hyeo-ung-lang/archive/v0.1.3.tar.gz"
-  sha256 "35883930d8f9deae7fe6a76084d970e75815ddf08707241ebaf1be89f7b0a6ad"
+  sha256 "f99930814206535ae6ba8dcd3103dfb1872fea7805513f7722c23c54c5f5e5f5"
 
   depends_on "rust"
 
