@@ -2,7 +2,7 @@ class Hyeong < Formula
   desc "Hyeo-ung Programming Language Compiler in Rust"
   homepage "https://github.com/buttercrab/hyeo-ung-lang"
   url "https://github.com/buttercrab/hyeo-ung-lang/archive/v0.2.0.tar.gz"
-  sha256 "f99930814206535ae6ba8dcd3103dfb1872fea7805513f7722c23c54c5f5e5f5"
+  sha256 "a362efc069f759b6b83428e816360d59a7c4afaf29a9a2ae7bcb764933265a5c"
 
   depends_on "rust"
 
@@ -12,7 +12,7 @@ class Hyeong < Formula
   end
 
   test do
-    assert_match "hyeong 0.1.3", shell_output("#{bin}/hyeong --version")
+    assert_match "hyeong 0.2.0", shell_output("#{bin}/hyeong --version")
     (testpath/"hello_world.hyeong").write "혀어어어어어어어엉........ 핫. 혀엉..... 흑... 하앗...
                                            흐윽... 형.  하앙.혀엉.... 하앙... 흐윽... 항. 항. 형...
                                            하앙. 흐으윽... 형... 흡... 혀엉..하아아앗. 혀엉.. 흡...
